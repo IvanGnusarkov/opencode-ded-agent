@@ -23,6 +23,15 @@ cp ~/ded/user.md.example ~/ded/user.md
 # Открой и напиши своё имя
 ```
 
+Для Windows (PowerShell):
+```powershell
+copy "$env:USERPROFILE\ded\user.md.example" "$env:USERPROFILE\ded\user.md"
+```
+Для Windows (cmd):
+```cmd
+copy %USERPROFILE%\ded\user.md.example %USERPROFILE%\ded\user.md
+```
+
 ### 3. Пропиши в opencode как агента
 
 Добавь в `~/.config/opencode/opencode.json` (или в локальный `opencode.json` в корне проекта):
